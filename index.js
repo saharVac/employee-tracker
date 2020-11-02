@@ -12,6 +12,17 @@ async function userAction() {
     return action
 }
 
+async function add() {
+    // TODO: write function
+}
+
+async function view() {
+    // TODO: write function
+}
+
+async function update() {
+    // TODO: write function
+}
 
 async function init() {
     // keep it going until user wants to exit
@@ -19,7 +30,17 @@ async function init() {
     while (!exit) {
         const act = await userAction()  
         if (act !== 'Exit') {
-
+            switch(act) {
+                case "Add":
+                    await add()
+                    break
+                case "View":
+                    await view()
+                    break;
+                case "Update":
+                    await update();
+                    break;
+            }
         } else {
             exit = true;
         }
