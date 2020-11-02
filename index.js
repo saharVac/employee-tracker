@@ -12,12 +12,27 @@ async function userAction() {
     return action
 }
 
+function question(action) {
+    return {
+        type: 'list',
+        name: 'action',
+        message: `What would you like to ${action}?`,
+        choices: ['department', 'role', 'employee', 'none']
+    }
+}
+
 async function add() {
-    // TODO: write function
+    const {table} = await inquirer.prompt(question('add'))
+    if (table !== 'none') {
+        // TODO: write function
+    }
 }
 
 async function view() {
-    // TODO: write function
+    const {table} = await inquirer.prompt(question('view'))
+    if (table !== 'none') {
+        // TODO: write function
+    }
 }
 
 async function update() {
