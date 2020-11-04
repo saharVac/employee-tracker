@@ -8,10 +8,8 @@
 
   ## Table of Contents
   - [Installation](#Installation)
-  - [Credits](#Credits)
   - [Usage](#Usage)
   - [Questions](#Questions)
-  - [License](#License)
 
 
   ## Installation
